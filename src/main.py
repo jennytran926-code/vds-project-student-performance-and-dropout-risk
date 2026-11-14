@@ -1,7 +1,5 @@
 """Command-line entry point: `python src/main.py [--desktop] [--port PORT]`."""
-
 from __future__ import annotations
-
 import argparse
 
 
