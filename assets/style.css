@@ -1,24 +1,83 @@
 /* Dash serves every file in assets/ automatically. */
-.page { max-width: 1400px; margin: 0 auto; padding: 24px; font-family: sans-serif; }
-.kpi-row { display: flex; gap: 16px; margin: 16px 0; }
-.kpi-card { flex: 1; padding: 10px; border-radius: 8px; background: #f4f6f8; }
-.kpi-label { font-size: 0.85rem; color: #667; }
-.kpi-value { font-size: 2rem; font-weight: 600; }
-.chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+html,
+body {
+  margin: 0;
+}
+.page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: sans-serif;
+}
+.page h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.kpi-row {
+  display: flex;
+  gap: 12px;
+}
+.kpi-card {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #f4f6f8;
+}
+.kpi-label {
+  font-size: 0.85rem;
+  color: #667;
+}
+.kpi-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.chart-row {
+  flex: 1;
+  min-height: 460px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
 .filter-bar {
-    display: flex;            
-    flex-direction: row;
-    gap: 12px;
-    align-items: flex-end;    
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
 }
 
 .filter-bar > div {
-    flex: 1;                 
-    min-width: 0;             
+  flex: 1;
+  min-width: 0;
 }
 
 .filter-bar label {
-    display: block;
-    font-size: 0.8rem;
-    margin-bottom: 4px;
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+.chart-card {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.chart-graph {
+  flex: 1;
+  min-height: 0;
+}
+.chart-card h3 {
+  margin: 0 0 2px;
+  font-size: 0.95rem;
+}
+.filter-bar > .filter-age {
+  flex: 2;
 }
